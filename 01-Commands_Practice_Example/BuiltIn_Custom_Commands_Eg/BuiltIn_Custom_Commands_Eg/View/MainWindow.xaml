@@ -1,0 +1,27 @@
+﻿<Window x:Class="BuiltIn_Custom_Commands_Eg.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+<DockPanel>
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="CustomCommand_Menu">
+                <MenuItem Command="{Binding OkCommand}" Header="Change Color" Icon="{StaticResource Orange_Red}"/>
+                <Separator/>
+                <MenuItem Command="{Binding CancelCommand}" Header="Default Color" Icon="{StaticResource Yellow}"/>
+            </MenuItem>
+            
+            <!--<MenuItem Header="BuiltInCommand_Menu">
+                <MenuItem Command="ApplicationCommands.Undo" Header="UndoMenu" Icon="{StaticResource Undo}"/>
+                <MenuItem Command="ApplicationCommands.Redo" Header="RedoMenu" Icon="{StaticResource Redo}"/>
+                <Separator/>
+            </MenuItem>-->
+        </Menu>
+    <Grid>
+        <StackPanel HorizontalAlignment="Center">
+            <TextBlock Text="{Binding txtblck_text, StringFormat=Default: {0}}" Padding="10" FontStyle="Italic" Background="{Binding txtblck_color}"/>
+            <Button Content="Change Color" Width="100" Height="30" Margin="20" Command="{Binding OkCommand}" />
+            <Button Content="Default Color" Width="100" Height="30" Margin="20" Command="{Binding CancelCommand}" />
+        </StackPanel>
+    </Grid>
+</DockPanel>
+</Window>

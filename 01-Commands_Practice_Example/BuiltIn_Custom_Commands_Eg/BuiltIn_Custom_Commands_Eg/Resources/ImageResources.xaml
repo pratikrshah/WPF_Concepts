@@ -1,0 +1,10 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    
+    <Image x:Key="Orange_Red" x:Shared="False" Source="Images/Orange_Red.png" Height="22" Width="22"/>
+    <Image x:Key="Yellow" x:Shared="False" Source="Images/Yellow.png" Height="22" Width="22"/>
+    
+    <Image x:Key="Undo" x:Shared="False" Source="Images/Undo.png" Height="22" Width="22"/>
+    <Image x:Key="Redo" x:Shared="False" Source="Images/Redo.png" Height="22" Width="22"/>
+   
+</ResourceDictionary>
